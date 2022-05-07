@@ -1,14 +1,16 @@
 import React, { useContext } from "react";
-import "../styles.css";
 import { Context } from "../Context";
 
-export default function ProductList({ props }) {
-  const { addToCart } = useContext(Context);
+function CartItems({ props }) {
+  const { removeFromCart, cartItem } = useContext(Context);
 
   function cartBtn() {
-    return <button onClick={() => addToCart(props)}>Add To Cart</button>;
+    return (
+      <button onClick={() => removeFromCart(props)}>Remove To Cart</button>
+    );
   }
-
+ 
+   
   return (
     <div className="product">
       <div className="product-image">
@@ -23,3 +25,6 @@ export default function ProductList({ props }) {
     </div>
   );
 }
+
+
+export default CartItems;

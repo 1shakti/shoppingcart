@@ -1,0 +1,43 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  body{
+    margin: auto;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    background-origin: padding-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+  img {
+    height: 150px;
+    width: 150px;
+  }
+
+  p{
+    color: black;
+  }
+
+  .product {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid
+  }
+  
+  button {
+    padding: 15px 20px;
+    height: 50px;
+    width: auto;
+  }
+
+  .link {
+    text-decoration: none;
+  }
+  
